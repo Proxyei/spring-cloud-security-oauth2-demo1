@@ -1,0 +1,29 @@
+server:
+  port: 10002
+  servlet:
+    context-path: /uaa
+
+
+spring:
+  application:
+    name: uaa-app
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: xieSHI123321
+    url: jdbc:mysql://127.0.0.1:3306/spring-security-oauth2-demo1
+  http:
+    encoding:
+      enabled: true
+      force: true
+      charset: utf-8
+
+logging:
+  level:
+    root: debug
+    org:
+      springframework:
+        web: info
+feign:
+  hystrix:
+    enabled: true
